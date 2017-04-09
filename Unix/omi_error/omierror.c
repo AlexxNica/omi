@@ -63,6 +63,7 @@ static struct Pair _pairs[] =
     { MI_RESULT_INVALID_CLASS_HIERARCHY, STRID_MI_RESULT_INVALID_CLASS_HIERARCHY },
     { MI_RESULT_WOULD_BLOCK, STRID_MI_RESULT_WOULD_BLOCK },
     { MI_RESULT_TIME_OUT, STRID_MI_RESULT_TIME_OUT },
+    { MI_RESULT_FAIL_LOAD_PROVIDER, STRID_MI_RESULT_FAIL_LOAD_PROVIDER },
 };
 
 MI_INLINE MI_ErrorCategory ErrorCategoryFromMIResult(MI_Uint32 error)
@@ -149,6 +150,9 @@ MI_INLINE MI_ErrorCategory ErrorCategoryFromMIResult(MI_Uint32 error)
         miCategory = MI_ERRORCATEGORY_RESOURCE_BUSY;
         break;
     case MI_RESULT_SERVER_IS_SHUTTING_DOWN :
+        miCategory = MI_ERRORCATEGORY_RESOURCE_UNAVAILABLE;
+        break;
+    case MI_RESULT_FAIL_LOAD_PROVIDER :
         miCategory = MI_ERRORCATEGORY_RESOURCE_UNAVAILABLE;
         break;
     default:

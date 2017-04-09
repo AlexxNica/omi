@@ -154,4 +154,5 @@
 #define STRID_MI_RESULT_INVALID_CLASS_HIERARCHY MI_T("Invalid class hierarchy.")
 #define STRID_MI_RESULT_WOULD_BLOCK MI_T("Socket would block")
 #define STRID_MI_RESULT_TIME_OUT MI_T("Result timed out")
+#define STRID_MI_RESULT_FAIL_LOAD_PROVIDER MI_T("The CIM server failed to load provider.")
 #endif

@@ -534,7 +534,10 @@ typedef _Return_type_success_(return == MI_RESULT_OK) enum _MI_Result
     MI_RESULT_SERVER_LIMITS_EXCEEDED = 27,
 
     /* The CIM server is shutting down and cannot process the operation. */
-    MI_RESULT_SERVER_IS_SHUTTING_DOWN = 28
+    MI_RESULT_SERVER_IS_SHUTTING_DOWN = 28,
+
+    /* The CIM server failed to load provider. */
+    MI_RESULT_FAIL_LOAD_PROVIDER = 29
 }
 MI_Result;
 

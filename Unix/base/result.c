@@ -148,6 +148,10 @@ const ZChar* Result_ToString(MI_Result result)
             MI_RESULT_TIME_OUT,
             MI_T("MI_RESULT_TIME_OUT")
         },
+        {
+            MI_RESULT_FAIL_LOAD_PROVIDER,
+            MI_T("MI_RESULT_FAIL_LOAD_PROVIDER")
+        },
     };
 
     for (i = 0; i < MI_COUNT(_pairs); i++)

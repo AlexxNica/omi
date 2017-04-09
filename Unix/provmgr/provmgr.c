@@ -431,7 +431,7 @@ static MI_Result MI_CALL _GetProviderByClassName(
         if (!lib)
         {
             trace_OpenProviderLib_Failed(scs(proventry->libraryName));
-            return MI_RESULT_FAILED;
+            return MI_RESULT_FAIL_LOAD_PROVIDER;
         }
     }
 
